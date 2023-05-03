@@ -1,0 +1,15 @@
+.content {
+    margin-top: 2rem;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer {
+    background-color: rgb(var(--main));
+    color: white !important;
+}
+
+body {
+    font-size: 1.4rem;
+}
