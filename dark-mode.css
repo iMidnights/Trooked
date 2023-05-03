@@ -3532,3 +3532,14 @@ gr-main-header {
 .tou-6i3zyv {
     background-color: #14556b !important;
 }
+
+.swal2-success-circular-line-left,
+.swal2-success-fix,
+.swal2-success-circular-line-right {
+    background-color: #131516 !important;
+
+}
+
+h1 {
+    color: white !important;
+}
