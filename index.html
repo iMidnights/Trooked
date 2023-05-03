@@ -23,7 +23,29 @@
       // window.onload = () => {
       //   Swal.fire('Welcome to Yaw Fitness Gym', 'We’re passionate about creating an accessible Gym for everyone.', 'success')
       // }
+      
     </script>
+    <style>
+      .info-home {
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 1fr 1fr auto;
+        gap: 20px;
+        padding: 30px;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+      info-home > div {
+        padding: 20px;
+      }
+      .crazy-guy {
+        grid-row: 1 / span 2;
+        grid-column: 3;
+      }
+      .crazy-guy > img {
+        max-height: 440px;
+      }
+    </style>
     <link rel="shortcut icon" href="https://lh3.googleusercontent.com/u_uBewruzElIcFKCa5hqsbHrEAE7Lcf57gw9BhWG_0mNpDtwQIEjKqbJsLNevHKuotFrAv92dxBa7aOYb682JtrRa_fPl_zUrzhWYcmT5Zmo4IKOhyt3FPJNp1pQ4hBSOoNjdFtLwxQHl60on9INZMORTw=s2048" type="image/x-icon">
   </head>
   <body>
@@ -69,43 +91,53 @@
         </nav>
         <div class="content d-flex flex-column mt-5 h-100">
             <h1 style="color: black; font-weight: 900; font-size: 3rem;">Home</h1>
-            <p class="text-center" style="font-weight: 400;">
-                Welcome to Yaw Fitness Gym, we’re passionate about<br> creating an accessible Gym for everyone.
-            </p>
-            <div class="buttons">
-                <a class="button" href="./fitness/excercise/index.html" style="border-radius: 10px 0 0 10px;">
-                    <span class="material-symbols-outlined">pool</span>
-                    Excercise
-                </a>
-                <a class="button" href="./diet/nutrition/index.html">
-                    <span class="material-symbols-outlined">nutrition</span>
-                    Nutrition
-                </a>
-                <a class="button" href="./diet/index.html">
-                    <span class="material-symbols-outlined">monitor_weight</span>
-                    Diet
-                </a>
-                <a class="button" href="/health/index.html">
-                    <span class="material-symbols-outlined">health_and_safety</span>
-                    Health
-                </a>
-                <a class="button" href="./fitness/sports/index.html">
-                    <span class="material-symbols-outlined">sports_basketball</span>
-                    Sports
-                </a>
-                <a class="button" href="./fitness/gym/index.html">
-                    <span class="material-symbols-outlined">exercise</span>
-                    Gym
-                </a>
-                <a class="button" href="./contact/index.html">
-                    <span class="material-symbols-outlined">call</span>
-                    Contact
-                </a>
-                <a class="button" href="./about/index.html" style="border-radius: 0 10px 10px 0;">
-                    <span class="material-symbols-outlined">help_center</span>
-                    About
-                </a> 
+
+            <div class="d-grid info-home">
+              <div class="welcome">
+                <h5 style="font-weight: 800; font-size: 1.5rem;">
+                  <u>Welcome</u>
+                </h5>
+                <p>
+                  Here at Regular Fitness we are here to help you divide and conquer the mountain of challenges that you will go through. We offer you a warm welcome to join us with thousands of people embarking on a new physical and mental journey.
+                </p>
+              </div>
+              <div class="principles">
+                <h5 style="font-weight: 800; font-size: 1.5rem;">
+                  <u>Our Key Principles</u>
+                </h5>
+                <p>
+                  At Regular Fitness, we have 4 main principles:
+                  <ul style="text-align: left; padding: 0 80px;">
+                   <li> To Educate</li>
+                   <li>To Exercise</li>
+                   <li>To Maintain a Decent Wellbeing</li>
+                   <li>To Maintain A Balanced Diet</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="how">
+                <h5 style="font-weight: 800; font-size: 1.5rem;">
+                  <u>How we will help you achieve this</u>
+                </h5>
+                <p>
+                  To help you achieve your ambitious goal of leveling up in a physical and mental manner we will help you by offering a variety of tips and programmes to support the user in their journey.                </p>
+              </div>
+              <div class="vision">
+                <h5 style="font-weight: 800; font-size: 1.5rem;">
+                  <u>The Vision</u>
+                </h5>
+                <p>
+                  Our Vision is to exceed beyond all limits.
+                  Time and health are two precious assets that we don’t recognize and appreciate until they have been depleted.
+                  <br>
+                  That is why our vision is to beat the impossible.
+                </p>
+              </div>
+              <div class="crazy-guy">
+                <img src="./assets/img/excercise.png" alt="">
+              </div>
             </div>
+            
         </div>
         <footer class="footer">
           <div class="d-flex justify-content-between mx-2" style="flex-flow: wrap;">
