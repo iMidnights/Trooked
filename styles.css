@@ -37,7 +37,7 @@ footer {
     font-size: 1.5rem;
 }
 
-.navbar-brand > img {
+.navbar-brand>img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -47,7 +47,7 @@ footer {
 
 .nav-link {
     color: white !important;
-    transition: border 0.2s ease-in-out; 
+    transition: border 0.2s ease-in-out;
     position: relative;
 }
 
@@ -75,16 +75,22 @@ footer {
     padding: 0 !important;
 }
 
+div#navbarSupportedContent {
+    margin-right: 10px;
+}
+
 @media (min-width: 992px) {
     .navbar-nav {
         background-color: rgb(var(--sub)) !important;
         margin-right: 0 !important;
-        border-radius: 10px 0 0 10px;
+        border-radius: 10px 10px 10px 10px;
         padding-left: 10px !important;
     }
+
     .nav-link {
         padding: 10px 20px !important;
     }
+
     .navbar-expand-lg .navbar-collapse {
         justify-content: flex-end !important;
     }
@@ -104,7 +110,7 @@ footer {
     row-gap: 10px;
 }
 
-.buttons > * {
+.buttons>* {
     all: unset;
     border-color: rgb(var(--main));
     border-style: solid;
@@ -125,7 +131,7 @@ footer {
     font-size: 60px;
 }
 
-.buttons > *:hover {
+.buttons>*:hover {
     background-color: rgba(var(--sub), 0.2);
     color: white !important;
     cursor: pointer;
@@ -197,11 +203,11 @@ p {
     border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translateX(26px);
     background-color: black;
 }
