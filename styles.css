@@ -79,6 +79,10 @@ div#navbarSupportedContent {
     margin-right: 10px;
 }
 
+.swal2-container.swal2-top-end.swal2-backdrop-show {
+    padding-top: 85px;
+}
+
 @media (min-width: 992px) {
     .navbar-nav {
         background-color: rgb(var(--sub)) !important;
