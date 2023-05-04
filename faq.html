@@ -15,31 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Regular Fitness - Home</title>
+    <title>Regular Fitness - Frequently Asked Questions</title>
     <link rel="stylesheet" href="./assets/css/styles.css" id="css-file">
     <link rel="stylesheet" href="./assets/css/dark-switch.css" id="css-file">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <style>
-      .info-home {
-        display: grid;
-        margin-top: 30px;
-        grid-template-columns: 1fr 1fr auto;
-        gap: 20px;
-        padding: 30px;
-        text-align: center;
-        font-size: 1.2rem;
-      }
-      info-home > div {
-        padding: 20px;
-      }
-      .crazy-guy {
-        grid-row: 1 / span 2;
-        grid-column: 3;
-      }
-      .crazy-guy > img {
-        max-height: 440px;
-      }
-    </style>
     <link rel="shortcut icon" href="./assets/img/reguler.png" type="image/x-icon">
   </head>
   <body>
@@ -115,60 +94,44 @@
           </div>
         </nav>
         <div class="content d-flex flex-column mt-5 h-100">
-              <h1 style="color: black; font-weight: 900; font-size: 3rem;">Home</h1>
+          <h1 style="color: black; font-weight: 900; font-size: 3rem;">requently Asked Questions <br> (FAQ) - Regular Fitness
+          </h1>
+          <br>
+            <audio controls>
+            <source src="./assets/audio/FAQ.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+
+            <p style="font-size: 1.4rem;">
+              <u><b>
+                What is Regular Fitness?
+              </b></u>
               <br>
-                <audio controls>
-                <source src="./assets/audio/Home.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-              </audio>
+              Regular Fitness is a website that provides guidance and resources for 30 to 40-year-olds looking to live a healthy lifestyle. Our goal is to help you achieve your fitness goals and improve your overall health through diet, exercise, and self-care.
+              <br>
+              <br>
+              <u><b>How can I get started with Regular Fitness?</b></u>
+              <br>
+              To get started with Regular Fitness, simply visit our website and explore our resources. We offer articles, guides, and tips on everything from nutrition and exercise to mindfulness and mental health.
+              <br>
+              <br>
+              <u><b>What kinds of exercise should I be doing?</b></u>
+              <br>
+              The best kind of exercise is one that you enjoy and can stick with long-term. We recommend a combination of cardiovascular exercise, strength training, and flexibility exercises to promote overall health and fitness. Consult with a personal trainer or healthcare professional to create a personalized workout plan that works for you.
+              <br>
+              <br>
+              <u><b>How can I improve my diet?</b></u>
+              <br>
+              Improving your diet starts with incorporating whole, minimally processed foods into your meals. Focus on eating a variety of colorful fruits and vegetables, lean proteins, whole grains, and healthy fats. Limit your intake of processed foods, added sugars, and unhealthy fats. Consult with a registered dietitian for personalized nutrition advice.
+              <br>
+              <br>
+              <u><b>What are some self-care practices I can incorporate into my routine?</b></u>
+              <br>
+              Self-care practices can include mindfulness meditation, yoga, deep breathing exercises, journaling, and spending time in nature. Prioritizing sleep, staying hydrated, and practicing stress-management techniques are also important for overall well being.
+              
+            </p>
 
-            <div class="d-grid info-home">
-              <div class="welcome">
-                <h5 style="font-weight: 800; font-size: 1.5rem;">
-                  <u>Welcome</u>
-                  <!-- tts -->
 
-                </h5>
-                <p>
-                  Here at Regular Fitness we are here to help you divide and conquer the mountain of challenges that you will go through. We offer you a warm welcome to join us with thousands of people embarking on a new physical and mental journey.
-                </p>
-              </div>
-              <div class="principles">
-                <h5 style="font-weight: 800; font-size: 1.5rem;">
-                  <u>Our Key Principles</u>
-                </h5>
-                <p>
-                  At Regular Fitness, we have 4 main principles:
-                  <ul style="text-align: left; padding: 0 80px;">
-                   <li> To Educate</li>
-                   <li>To Exercise</li>
-                   <li>To Maintain a Decent Wellbeing</li>
-                   <li>To Maintain A Balanced Diet</li>
-                  </ul>
-                </p>
-              </div>
-              <div class="how">
-                <h5 style="font-weight: 800; font-size: 1.5rem;">
-                  <u>How we will help you achieve this</u>
-                </h5>
-                <p>
-                  To help you achieve your ambitious goal of leveling up in a physical and mental manner we will help you by offering a variety of tips and programmes to support the user in their journey.                </p>
-              </div>
-              <div class="vision">
-                <h5 style="font-weight: 800; font-size: 1.5rem;">
-                  <u>The Vision</u>
-                </h5>
-                <p>
-                  Our Vision is to exceed beyond all limits.
-                  Time and health are two precious assets that we don’t recognize and appreciate until they have been depleted.
-                  <br>
-                  That is why our vision is to beat the impossible.
-                </p>
-              </div>
-              <div class="crazy-guy">
-                <img src="./assets/img/excercise.png" alt="">
-              </div>
-            </div>
             
         </div>
         <footer class="footer" style="background-color: #0053cfff;">
@@ -195,44 +158,6 @@
           </div>
         </footer>
     </div>
-    <script>
-      const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-      })
-
-      const Toast2 = Swal.mixin({
-        icon: 'success',
-        title: 'Welcome to <b>Regular Fitness</b>',
-        html: 'Exceeding Beyond All Limits',
-        showConfirmButton: false,
-        timer: 3000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        },
-        didClose: () => {
-          Toast.fire({
-        icon: 'success',
-        title: 'Loaded successfully'
-      })
-        }
-      })
-
-Toast2.fire(
-
-)
-
-      //  Swal.fire('Welcome to Yaw Fitness Gym', 'We’re passionate about creating an accessible Gym for everyone.', 'success')
-    </script>
     <script src="assets/js/dark-mode.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
