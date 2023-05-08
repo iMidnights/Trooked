@@ -4,6 +4,19 @@
     --bg: 207, 226, 243;
 }
 
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.content {
+    margin: 0 auto 51px;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     /* font-family: 'Noto Sans', sans-serif; */
